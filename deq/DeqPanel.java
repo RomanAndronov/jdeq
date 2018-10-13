@@ -128,7 +128,10 @@ class DeqPanel
 			srcSqr.clear();
 			nextNumber--;
 			lastSelectedSquare = lss;
-			handleClues( CMD_SHOW_CLUES );
+			if ( chkbShowClues.isSelected() )
+			{
+				handleClues( CMD_SHOW_CLUES );
+			}
 
 			return;
 		}
